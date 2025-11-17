@@ -29,7 +29,7 @@ jobs:
           context: ./review-backend
           file: ./review-backend/backend.dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/k8-backendprac:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/k8-backenddd:latest
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v5
@@ -37,4 +37,4 @@ jobs:
           context: ./review-frontend
           file: ./review-frontend/frontend.dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/k8-frontendprac:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/k8-frontenddd:latest
