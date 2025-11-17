@@ -71,7 +71,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: sigatapumuralimohan/k8-backendprac:latest  # <-- change this
+          image: sigatapumuralimohan/k8-backenddd:latest  # <-- change this
           ports:
             - containerPort: 2000
 ---
@@ -110,7 +110,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: sigatapumuralimohan/k8-frontendprac:latest  # <-- change this
+          image: sigatapumuralimohan/k8-frontenddd:latest  # <-- change this
           ports:
             - containerPort: 80
           env:
